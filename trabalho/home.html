@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="conteudoPrincipal"> 
+        <header>
+            <div class="header-container">
+                <img class="icone-prefeitura" alt="icone da prefeitura" id="brasao" src="brasao_processed_1_1.png"/><!-- Base64 completa da imagem -->
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/Site1.html">Início</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="http://127.0.0.1:5500/Haddadd.html">Contato</a></li>
+                        <li><button class="btn-primario" id="mainButton">Serviços</button></li>
+                        <li><button id="darkModeToggle">Dark Mode</button></li>  <!-- Botão para ativar/desativar o Dark Mode -->
+                    </ul>
+                </nav>
+            </div>
+            <!-- Banner e botões de navegação -->
+            <img id="rotatingImage" src="BannerAudienciaPublica.jpg" alt="Rotating Banner" width="800px"/>
+            <div id="botoesImagem">
+                <button onclick="changeImageTo(0)">1</button>
+                <button onclick="changeImageTo(1)">2</button>
+                <button onclick="changeImageTo(2)">3</button>
+                <button onclick="changeImageTo(3)">4</button>
+            </div>
+        </header>
+
+        <!-- Botões de serviços -->
+        <div id="buttonContainer" class="hidden button-container">
+            <a href="https://transparenciabrasil-cidadao.govbr.cloud/transparenciabrasil-cidadao/medianeira/prefeitura /"><button class="btn-secundario">Transparencia Brasil-cidadão</button></a><br>
+        <a href="https://radardatransparencia.atricon.org.br/radar-da-transparencia-publica.html"><button class="btn-secundario">Radar-da-transparencia-publica</button></a><br>
+        <a href="https://app2.pr.sebrae.com.br/sala-digital/home"><button class="btn-secundario">Sebrae</button></a><br>
+        <a href="https://medianeira.govbr.cloud/NFSe.Portal/"><button class="btn-secundario">NSFe</button></a><br>
+        <a href="https://medianeira.govbr.cloud:10443/cidadao/servlet/br.com.cetil.ar.jvlle.hatendimento"><button class="btn-secundario">Atendimento Cidadão</button></a><br>
+        <a href="https://medianeira.govbr.cloud/certidao/"><button class="btn-secundario">Certidão</button></a><br>
+        <a href="https://medianeira.govbr.cloud/iptu/index.php"><button class="btn-secundario">IPTU</button></a><br>
+        <a href="https://medianeira.govbr.cloud/NFSe.Portal/"><button class="btn-secundario">Portal</button></a><br>
+        <a href="https://www.nfse.gov.br/EmissorNacional/Login?ReturnUrl=%2FEmissorNacional"><button class="btn-secundario">Emissor Nacional</button></a><br>
+        <a href="https://leismunicipais.com.br/prefeitura/pr/medianeira"><button class="btn-secundario">Leis Municipais</button></a><br>
+        <a href="https://www.medianeira.pr.gov.br/planodiretor/"><button class="btn-secundario">Plano Diretor</button></a><br>
+        <a href="https://medianeira.1doc.com.br/b.php?pg=wp/wp&itd=5"><button class="btn-secundario">Protocolos</button></a><br>
+</div>
+<section id="noticias" class="noticia-section">
+    <div class="noticiaCard">
+        <img src="https://www.medianeira.pr.gov.br/imagens/noticias/thumbs/60484.jpg" alt="Imagem da Notícia 1" class="noticia-image">
+        <div class="noticia-content">
+            <h2 class="noticia-titulo">Prefeitura de Medianeira terá Ponto Facultativo no Dia do Servidor Público</h2>
+            <p class="noticia-desc">A Administração Municipal de Medianeira decretou ponto facultativo <br> nas Repartições Públicas Municipais, no âmbito do Poder Executivo Municipal, no dia 28 de outubro, Dia do Servidor Público.</p>
+        </div>
+    </div>
+    <div class="noticiaCard">
+        <img src="https://www.medianeira.pr.gov.br/imagens/noticias/thumbs/60472.jpg" alt="Imagem da Notícia 2" class="noticia-image">
+        <div class="noticia-content">
+            <h2 class="noticia-titulo">ATENÇÃO PEDESTRES E MOTORISTAS</h2>
+            <p class="noticia-desc">O semáforo do viaduto da Avenida Brasília com a Avenida 24 de Outubro está inoperante <br> devido a uma manutenção que está sendo realizada.</p>
+        </div>
+    </div>
+    <div class="noticiaCard">
+        <img src="https://www.medianeira.pr.gov.br/imagens/noticias/thumbs/60434.jpg" alt="Imagem da Notícia 3" class="noticia-image">
+        <div class="noticia-content">
+            <h2 class="noticia-titulo">Medianeira participa do Fórum Governança Compartilhada realizado pelo POD</h2>
+            <p class="noticia-desc">A administração municipal participou na sexta-feira (18) do Fórum Governança Compartilhada: Caminhos para o Desenvolvimento Regional Integrado, realizado pelo Programa Oeste em Desenvolvimento.</p>
+        </div>
+    </div>
+    <div class="noticiaCard">
+        <img src="https://www.medianeira.pr.gov.br/imagens/noticias/thumbs/60426.jpg" alt="Imagem da Notícia 4" class="noticia-image">
+        <div class="noticia-content">
+            <h2 class="noticia-titulo">Educação comemora o Dia Nacional da Alimentação Escolar</h2>
+            <p class="noticia-desc">O semáforo do viaduto da Avenida Brasília com a Avenida 24 de Outubro está inoperante <br> devido a uma manutenção que está sendo realizada.</p>
+        </div>
+    </div>
+    <div class="noticiaCard">
+        <img src="https://www.medianeira.pr.gov.br/imagens/noticias/thumbs/60444.jpg" alt="Imagem da Notícia 5" class="noticia-image">
+        <div class="noticia-content">
+            <h2 class="noticia-titulo">Dia de Finados: Trânsito na rua Minuano será em mão única</h2>
+            <p class="noticia-desc">Buscando evitar transtornos e gerar maior fluidez no trânsito no Dia de Finados,<br> 02 de novembro, a rua Minuano terá o fluxo de trânsito somente em um sentido da via.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>Entre em contato:</p>
+        <p>Prefeitura do Município de Medianeira - Avenida José Callegari, 647 - Bairro Ipê - CEP 85720-052 - Medianeira - Paraná - CNPJ: 76.206.481/0001-58 </p>
+        <p>Telefone: (45) 3264-8600 - Horário de atendimento: segunda a sexta, 08:00 - 12:00 / 13:30 - 17:00</p>
+          
+    </div>
+</footer>
+    <script src="script.js"></script> <!-- Link para o JavaScript externo -->
+</div>
+</body>
+</html>

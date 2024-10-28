@@ -1,0 +1,373 @@
+/* Adiciona estilo dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode body {
+    background-color: #333;
+    color:#fff;
+}
+
+.dark-mode nav ul li a {
+    color:#fff;
+}
+.dark-mode footer {
+    background-color:#444;
+}
+.dark-mode .header-container {
+    background-color: #444;
+}
+
+.dark-mode .noticiaCard {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .footer-content {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+.dark-mode a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dark-mode a:hover {
+    color: #ccc;
+}
+
+.dark-mode header {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode #botoesImagem button {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode #botoesImagem button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Alterar para #333 no dark mode */
+    color: #333; /* Alterar para #fff no dark mode */
+}
+
+.container-principal {
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0077c2; /* Alterar para #444 no dark mode */
+    color: white; /* Alterar para #fff no dark mode */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone-prefeitura {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Alterar para #fff no dark mode */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-container {
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0077c2; /* Alterar para #444 no dark mode */
+    color: #ffffff; /* Alterar para #fff no dark mode */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.home-section {
+    background-color: #0077c2; /* Alterar para #444 no dark mode */
+    color: white; /* Alterar para #fff no dark mode */
+    text-align: center;
+}
+
+.servicos-section {
+    background-color: #f9f9f9; /* Alterar para #444 no dark mode */
+    text-align: center;
+}
+
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.servico {
+    background-color: #fff; /* Alterar para #444 no dark mode */
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.noticia {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Alterar para #444 no dark mode */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-section {
+    background-color: #f0f0f0; /* Alterar para #444 no dark mode */
+    color: #333; /* Alterar para #fff no dark mode */
+    text-align: center;
+    padding: 40px 0;
+    border-top: 2px solid #0077c2; /* Alterar para #666 no dark mode */
+}
+
+button.btn-primario {
+    background-color: #0077c2; /* Alterar para #555 no dark mode */
+    color: white; /* Alterar para #fff no dark mode */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    font-size: 16px;
+    max-width: 250px;
+    width: 100%;
+}
+
+button.btn-primario:hover {
+    background-color: #005fa3; /* Alterar para #666 no dark mode */
+    transform: scale(1.05);
+}
+
+button.btn-primario:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #004080; /* Alterar para #444 no dark mode */
+    color: white; /* Alterar para #fff no dark mode */
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+button.btn-secundario {
+    padding: 10px 20px;
+    background-color: #ffffff; /* Alterar para #444 no dark mode */
+    color: rgb(0, 0, 0); /* Alterar para #fff no dark mode */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    max-width: 250px;
+    width: 100%;
+}
+
+button.btn-secundario:hover {
+    background-color: #d3d6d3; /* Alterar para #666 no dark mode */
+    transform: scale(1.05);
+}
+
+button.btn-secundario:active {
+    transform: scale(0.95);
+}
+
+#brasao {
+    height: 80px;
+    margin: 15px;
+}
+
+.noticia-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.noticiaCard {
+    flex: 1 1 calc(30% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff; /* Alterar para #444 no dark mode */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.noticiaCard:hover {
+    transform: translateY(-5px);
+}
+
+.noticia-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.noticia-titulo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0077c2; /* Alterar para #fff no dark mode */
+    margin: 10px 0;
+}
+
+.noticia-desc {
+    font-size: 0.95em;
+    color: #555; /* Alterar para #fff no dark mode */
+    line-height: 1.5;
+}
+
+#botoesImagem {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#botoesImagem button {
+    background-color: #0077c2; /* Alterar para #555 no dark mode */
+    color: white; /* Alterar para #fff no dark mode */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+#botoesImagem button:hover {
+    background-color: #005fa3; /* Alterar para #666 no dark mode */
+    transform: scale(1.05);
+}
+
+#botoesImagem button:active {
+    transform: scale(0.95);
+}
+
+#rotatingImage {
+    width: 100%;
+    max-width: 900px;
+    height: 150px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.dark-mode button.btn-secundario {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode button.btn-primario {
+    background-color: #444;
+    color:#fff;
+}
+
+.dark-mode button.btn-secundario:hover  {
+    background-color: #666;
+    color:#fff;
+}
+
+.dark-mode .noticia-desc {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .noticia-titulo {
+    color:#222;
+}
+
+#darkModeToggle {
+    padding: 10px 20px;
+    background-color: #fff; /* Cor de fundo padrão */
+    color: #0077c2; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 10px; /* Margem superior */
+}
+
+#darkModeToggle:hover {
+    background-color: #0077c2; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+#darkModeToggle:focus {
+    outline: none; /* Remove a borda de foco */
+    box-shadow: 0 0 0 3px rgba(0, 119, 194, 0.5); /* Sombra de foco */
+}
