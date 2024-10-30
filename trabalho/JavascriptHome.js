@@ -1,7 +1,12 @@
-const darkModeToggle = document.getElementById('darkModeToggle');
-
-darkModeToggle.addEventListener('click', () => {
+// Script para alternar entre modo claro e escuro
+const toggleButton = document.getElementById('darkModeToggle');
+toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Modo Claro';
+    } else {
+        toggleButton.textContent = 'Modo Escuro';
+    }
 });
 const mainButton = document.getElementById('mainButton');
 const buttonContainer = document.getElementById('buttonContainer');
@@ -42,7 +47,7 @@ function updateImage() {
 
 // Iniciar a rotação automática
 function startAutoRotate() {
-    interval = setInterval(changeImage, 5000);
+    interval = setInterval(changeImage, 8000);
 }
 
 // Alterar imagem manualmente ao clicar no botão
