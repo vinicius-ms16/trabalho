@@ -1,14 +1,21 @@
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+css
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    transition: background-color 0.3s, color 0.3s;  
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
     margin: 0;
     padding: 0;
 }
@@ -83,7 +90,7 @@ footer {
     padding: 15px 0;
 }
 
-/ Estilos para o modo escuro /
+/* Estilos para o modo escuro */
 body.dark-mode header {
     background-color: #444;
 }
@@ -104,53 +111,53 @@ body.dark-mode footer {
 form button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #fff; / Cor de fundo padrão /
-    color: #0077c2; / Cor do texto /
+    background-color: #fff; /* Cor de fundo padrão */
+    color: #0077c2; /* Cor do texto */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px; 
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); / Sombra suave /
+    font-size: 16px; /* Aumentar o tamanho da fonte */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 form button:hover {
-    background-color: #0077c2;
-    color: #fff; 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #0077c2; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
 
 form button:focus {
-    outline: none; 
-    box-shadow: 0 0 0 3px rgba(0, 119, 194, 0.5); 
+    outline: none; /* Remove a borda de foco */
+    box-shadow: 0 0 0 3px rgba(0, 119, 194, 0.5); /* Sombra de foco */
 }
 
 #toggle-mode {
     padding: 10px 20px;
-    background-color: #fff; / Cor de fundo padrão /
-    color: #0077c2; / Cor do texto /
+    background-color: #fff; /* Cor de fundo padrão */
+    color: #0077c2; /* Cor do texto */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px; / Tamanho da fonte /
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; / Transições suaves /
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); / Sombra suave /
-    margin-top: 10px; / Margem superior /
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 10px; /* Margem superior */
 }
 
 #toggle-mode:hover {
-    background-color: #0077c2; / Cor de fundo ao passar o mouse /
-    color: #fff; / Cor do texto ao passar o mouse /
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); / Sombra mais intensa ao passar o mouse /
+    background-color: #0077c2; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
 
 #toggle-mode:focus {
-    outline: none; / Remove a borda de foco /
-    box-shadow: 0 0 0 3px rgba(0, 119, 194, 0.5); / Sombra de foco /
+    outline: none; /* Remove a borda de foco */
+    box-shadow: 0 0 0 3px rgba(0, 119, 194, 0.5); /* Sombra de foco */
 }
 
 .dark-mode #toggle-mode {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); / Sombra suave 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     background-color:#333;
     color: #fff;
 
